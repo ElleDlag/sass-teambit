@@ -1,0 +1,78 @@
+.b-login{
+    max-width: 628px;
+    margin: 0 auto 35px;
+    &__btn{
+        height: 35px;
+        line-height: 35px;
+        padding: 0 20px;
+        color: #fff;
+        font-size: .875rem;
+        background: #30488f;
+        border-radius: 7px;
+        border: none;
+        position: relative;
+
+        display: inline-block;
+        vertical-align: middle;
+        cursor: pointer;
+        box-sizing: border-box;
+        outline: 0;
+        text-align: center;
+        text-decoration: none!important;
+        white-space: nowrap;
+    }
+    &__icon{
+        width: 100%;
+        display: inline-block;
+        vertical-align: middle;
+        -webkit-transform: translateY(-1px);
+        -ms-transform: translateY(-1px);
+        transform: translateY(-1px);
+    }
+    &__label{
+        display: block;
+        height: 35px;
+        width: 38px;
+        line-height: 35px;
+        font-size: .8125rem;
+        color: #bdb5af;
+        text-align: center;
+        margin: auto;
+    }
+    &-extra{
+        text-align: center;
+        margin: -15px auto 20px;
+    }
+}
+.b-icon{
+    max-width: 140px;
+    margin: 20px auto;
+    position: relative;
+    &__img{
+        margin: auto;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        max-width: 100%;
+        max-height: 100%;
+    }
+    &::after{
+        content:"";
+        display: block;
+        padding-top: 75%;
+    }
+}
+
+@media screen and (min-width: 480px){
+    .b-login {
+        text-align: center;
+        &__icon{
+            width: auto;
+        }
+        &__label{
+            display: inline-block!important;
+        }
+    }
+}

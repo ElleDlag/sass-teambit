@@ -1,0 +1,16 @@
+@import "../fonts/fonts";
+@import "variables";
+@import "commons";
+@import "utils";
+@import "components";
+@import "header";
+@import "main";
+@import "nav";
+@import "section";
+@import "footer";
+
+
+.page {
+    min-height: 100%;
+    font-family: 'HarmoniaSansProCyr-Regular',Arial,sans-serif;
+}

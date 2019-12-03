@@ -1,0 +1,124 @@
+nav{
+    display:block;
+    .h-menu{
+        list-style-type: none;
+        padding: 15px 25px;
+        margin: 10px 0 0;
+        font-size: 0;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #fff;
+        z-index: 1000;
+        box-shadow: 0 2px 2px 1px rgba(0, 0, 0, .1);
+        display: none;
+        -webkit-transition-property: margin;
+        transition-property: margin;
+        &__item{
+            display: block;
+            font-size: .875rem;
+        }
+        &__link{
+            display: block;
+            height: 35px;
+            line-height: 35px;
+            white-space: nowrap;
+        }
+        &__btn{
+            margin-top: 10px;
+            height: 35px;
+            line-height: 35px;
+            padding: 0 20px;
+            color: #fff;
+            font-size: .875rem;
+            background: #30488f;
+            border-radius: 7px;
+            border: none;
+            position: relative;
+
+            display: inline-block;
+            vertical-align: middle;
+            cursor: pointer;
+            box-sizing: border-box;
+            outline: 0;
+            text-align: center;
+            text-decoration: none!important;
+            white-space: nowrap;
+
+            border: 1px solid #30488f;
+            line-height: 33px;
+            background: #fff;
+            color: #30488f !important;
+        }
+        &__icon{
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: -3px;
+            height: 18px;
+            width: 18px;
+            position: relative; 
+        }
+        &::before{
+            height: 0;
+            width: 0;
+            border-bottom: 8px solid #bdb5af;
+            border-left: 8px solid transparent;
+            border-right: 8px solid transparent;
+            top: -8px;
+            right: 35px;
+        }
+        &::after {
+            height: 0;
+            width: 0;
+            border-bottom: 7.5px solid #fff;
+            border-left: 7.5px solid transparent;
+            border-right: 7.5px solid transparent;
+            top: -7px;
+            right: 36px;
+        }
+        &::before, &::after{
+            content: "";
+            position: absolute;
+        }
+        a{
+            font-family: 'HarmoniaSansProCyr-SemiBd';
+            font-weight: 600;
+            color:$text-main;
+        }
+
+    }
+}
+
+@media screen and (min-width: 768px){
+    nav{
+        .h-menu{
+            display: block!important;
+            float: right;
+            position: static;
+            padding: 0;
+            margin: 0!important;
+            top: auto;
+            left: auto;
+            right: auto;
+            box-shadow: none;
+            &__item{
+                display: inline-block;
+                vertical-align: middle;
+                margin-left: 20px;
+            }
+            &__link{
+                display: inline-block;
+                vertical-align: middle;
+                padding: 0 10px;
+            }
+            &__btn{
+                margin: 0 0 0 10px;
+            }
+            &::after, &::before {
+                display: none;
+            }
+        }
+    }
+    
+}
