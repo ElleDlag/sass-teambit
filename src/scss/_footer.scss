@@ -1,0 +1,111 @@
+.b-footer{
+    margin-top: 50px;
+    padding: 55px 0;
+    &__inner{
+        max-width: 1150px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 25px;
+        box-sizing: border-box;
+        &:after{
+            @include clearFix
+        }
+    }
+    &__col{
+        text-align: left;
+        width: 100%;
+        float: left;
+        box-sizing: border-box;
+        min-height: 1px;
+    }
+    &__item{
+        width: 100%;
+        float: left;
+        box-sizing: border-box;
+        min-height: 1px;
+        margin-top: 25px;
+    }
+    &__title{
+        font-size: 1.125rem;
+        display: block;
+        margin-top: 0;
+
+        margin-bottom: 15px;
+        line-height: 1.2;
+        color: #58402c;
+        font-family: 'HarmoniaSansProCyr-SemiBd';
+        font-weight: 600;
+    }
+
+}
+.f-menu{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    &__item{
+        display: block;
+        font-size: .875rem;
+        line-height: 2.4;
+    }
+    &__link{
+        text-decoration: none;
+        color: #58402c;
+    }
+    
+}
+
+@media (min-width: 50em){
+    .f-menu {
+        margin: 0;
+    }
+}
+@media screen and (min-width: 380px){
+    .b-footer__item {
+        width: 45%;
+        margin-right: 5%;
+        &-special{
+            clear: left;
+        }
+    }
+}
+@media screen and (min-width: 992px){
+    .b-footer{
+        &__col{
+            width: 57%;
+            margin-left: 3%;
+            text-align: left;
+            &:first-child{
+                margin-left: 0;
+                width: 40%;
+            }
+        }
+        &__item{
+            margin-right: 0;
+            margin-top: 0;
+            width: 18%;
+            margin-left: 2%;
+            &-special{
+                clear: none;
+            }
+        }
+    }
+}
+@media screen and (min-width: 1200px){
+    .b-footer{
+        &__inner{
+            @include pd-lr-0
+        }
+        &__col{
+            width: 63%;
+            &:first-child{
+                width: 34%;
+            }
+        }
+        
+    }
+}
+
+
+
+
+
