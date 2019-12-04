@@ -49,14 +49,6 @@
     }
 }
 
-@media screen and (min-width: 1200px){
-  .page{
-    .g-container{
-      @include pd-lr-0
-    }
-  }
-}
-
 @media screen and (min-width: 768px){
   .page{
     .g-title {
@@ -65,5 +57,14 @@
     }
   }
 }
+@media screen and (min-width: 1200px){
+  .page{
+    .g-container{
+      @include pd-lr-0
+    }
+  }
+}
+
+
 
 

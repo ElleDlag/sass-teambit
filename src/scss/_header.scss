@@ -45,19 +45,6 @@
     }
 }
 
-@media screen and (min-width: 1200px){
-    .header{
-        &__inner{
-            @include pd-lr-0;
-            &::before{
-                content: '';
-                @include abs-lr-0
-            }
-        }
-    }
-    
-}
-
 @media screen and (min-width: 768px){
     .header{
         &__wrapper {
@@ -75,3 +62,16 @@
         }
     }
 }
+@media screen and (min-width: 1200px){
+    .header{
+        &__inner{
+            @include pd-lr-0;
+            &::before{
+                content: '';
+                @include abs-lr-0
+            }
+        }
+    }
+    
+}
+

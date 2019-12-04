@@ -143,16 +143,17 @@
     }
 }
 
-@media screen and (min-width: 992px){
-    .f-about {
-        margin: 0;
-        width: 370px;
-        &__entry{
-            max-width: 390px;
+@media screen and (min-width: 480px){
+    .b-login {
+        text-align: center;
+        &__icon{
+            width: auto;
+        }
+        &__label{
+            display: inline-block!important;
         }
     }
 }
-
 @media screen and (min-width: 768px){
     .f-about {
         width: 100%;
@@ -166,15 +167,16 @@
         }
     }
 }
-
-@media screen and (min-width: 480px){
-    .b-login {
-        text-align: center;
-        &__icon{
-            width: auto;
-        }
-        &__label{
-            display: inline-block!important;
+@media screen and (min-width: 992px){
+    .f-about {
+        margin: 0;
+        width: 370px;
+        &__entry{
+            max-width: 390px;
         }
     }
 }
+
+
+
+
